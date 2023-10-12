@@ -8,16 +8,16 @@ _workbook postfix. Example: my_html_workbook.html
 
     -------------------------------
    
-5. Create <form> with GET or POST method in your HTML workbook
-6. Use at least 5 form attributes, 3 elements
-7. Form should have Submit functionality
+4. Create <form> with GET or POST method in your HTML workbook
+5. Use at least 5 form attributes, 3 elements
+6. Form should have Submit functionality
    
    -------------------------------
    
-9. Find code example with HTML Geolocation on the Web
-10. Find code example with HTML Drag and Drop on the Web
-11. Add Geolocation code to your workshop
-12. Process code and check if it work
+7. Find code example with HTML Geolocation on the Web
+8. Find code example with HTML Drag and Drop on the Web
+9. Add Geolocation code to your workshop
+10. Process code and check if it work
     
 
 ### R E S O U RC E S F O R S E L F - L E A R N I N G
