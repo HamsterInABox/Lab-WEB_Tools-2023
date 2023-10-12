@@ -14,6 +14,6 @@
     
  -------------------------------
  
-### R E S O U RC E S F O R S E L F - L E A R N I N G
+### RESOURCES FOR SELF - LEARNING
 • [HTML 5 Tutorial ](https://www.w3schools.com/html/default.asp)
 • [Free CodeCamp activities](https://www.freecodecamp.org/learn/responsive-web-design/)
