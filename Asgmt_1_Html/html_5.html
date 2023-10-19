@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--- Check: https://htmlpreview.discoverypark.info/ --> 
+<html>
+<head>
+    <title>Classwork Assignment - HTML Workbook</title>
+    <style>
+        #div1, #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<!---
+<form action="https://www.w3schools.com/tags/ref_httpmethods.asp" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br><br>
+  <input type="submit" value="Submit using GET">
+</form>
+
+<br><br>
+
+<form action="https://www.w3schools.com/tags/ref_httpmethods.asp" method="post">
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit using POST">
+</form>
+--->
+
+    <h2>The Brainy Byte</h2>
+
+    <form action="https://www.w3schools.com/tags/ref_httpmethods.asp" method="post" target="_blank" enctype="multipart/form-data" autocomplete="on">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+    <h2>HTML Geolocation </h2>
+
+    <p>Click the button to get your coordinates:</p>
+
+    <button onclick="getLocation()">Get My Location</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</body>
+</html>
