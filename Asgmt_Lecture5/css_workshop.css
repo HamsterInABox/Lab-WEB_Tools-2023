@@ -1,0 +1,42 @@
+/* blank.css*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: Violet;
+}
+
+h2 {
+    color: SlateBlue;
+    font-family: courier;
+    font-size: 160%;
+}
+
+p {
+    text-align: center;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    -webkit-background-clip: text;
+    color: transparent; /* Hide the original text */
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #008CBA; /* Change to a different color on hover */
+}
