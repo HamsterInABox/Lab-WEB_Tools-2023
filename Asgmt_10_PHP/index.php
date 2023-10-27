@@ -33,7 +33,7 @@ function test_input($data) {
 ?>
 
 <h2>PHP Form</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+<form method="post" action="">  
   Name: <input type="text" name="name">
   <br><br>
   Surname : <input type="text" name="sname">
