@@ -14,6 +14,44 @@ footer {
 </head>
 
 <body>
+<?php
+// define variables and set to empty values
+$name = $sname = $dob = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["sname"]);
+  $website = test_input($_POST["dob"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <br><br>
+  Surname : <input type="text" name="sname">
+  <br><br>
+  Data of Birth: <input type="text" name="dob">
+  <br><br>
+  <input type="submit" name="submit" value="Submit"> 
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $sname;
+echo "<br>";
+echo $dob;
+?>
+
 
 <footer>
 <?php
