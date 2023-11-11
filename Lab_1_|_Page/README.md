@@ -1,6 +1,6 @@
 ### Laboratory Work. Web Application Development Tools
  --------------------------------
-##TODO:
+ ##TODO:
 1. Install NPM at your local environment.
  2. Create New Web App Project (using Node.js with Express.js)
  3. Add a design template to your Web App.
